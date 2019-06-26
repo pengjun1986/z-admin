@@ -19,11 +19,9 @@ export default {
   },
   mounted () {
     if (this.project === 'user') {
-      setTimeout(() => {
-        this.loadJs('http://127.0.0.1/js/chunk-vendors.d797191b.js')
-        this.loadJs('http://127.0.0.1/js/app.240df4ce.js')
-        this.loadJs('http://127.0.0.1/js/chunk-2d0b68f8.5f0ab895.js')
-      }, 100)
+      this.loadJs('http://127.0.0.1/js/chunk-2d0b68f8.5f0ab895.js')
+      this.loadJs('http://127.0.0.1/js/chunk-vendors.d797191b.js')
+      this.loadJs('http://127.0.0.1/js/app.240df4ce.js')
     }
   },
   methods: {
